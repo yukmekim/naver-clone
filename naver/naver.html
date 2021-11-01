@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/top-banner.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <script src="js/banner.js"></script>
+    <script src="js/auto-complete.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -35,7 +37,64 @@
         </div>
         <div id="header">
             <div class="header-bg">
-                
+                <div class="header-group">
+                    <div class="logo-area">
+                        <h1 class="logo">
+                            <a href="https://www.naver.com/">
+                                <span class="blind">네이버</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="service-area">
+                        <a class="set-home" href="https://help.naver.com/support/welcomePage/guide.help">네이버를 시작페이지로</a>
+                        <a class="jr-naver" href="https://happybean.naver.com/">
+                            <span class="blind">쥬니어네이버</span>
+                        </a>
+                        <a class="hpbean" href="https://happybean.naver.com/">
+                            <span class="blind">해피빈</span>
+                        </a>
+                    </div>
+                    <div class="search-area">
+                        <form action="https://search.naver.com/search.naver">
+                            <input type="text">
+                            <button class="search-btn">
+                                <span class="blind">검색</span>
+                                <span class="search-submit"></span>
+                            </button>
+                        </form>
+                        <a class="keyboard">
+                            <span class="blind">한글 입력기</span>
+                            <span class="keyboard-icon"></span>
+                        </a>
+                        <div class="auto-complete" onclick="atcpBtn()">
+                            <a class="auto-complete-btn fold" aria-pressed="false" id="b">
+                                <span class="blind">자동완성 레이어</span>
+                                <span class="auto-complete-icon" id="a"></span>
+                            </a>
+                        </div>
+                        <div class="autoFrame">
+                            <div class="atfr-fixer">
+                                <div class="autoFrame-wrap">
+                                    <div class="autoFrame-ly">
+                                        <span class="autoFrame-ly-side">
+                                            <span class="option-item">
+                                                <a href="https://help.naver.com/support/service/main.help?serviceNo=605&categoryNo=1987">도움말</a>
+                                            </span>
+                                            <span class="option-item">
+                                                <a class="report" href="https://help.naver.com/support/contents/contents.help?serviceNo=605&categoryNo=18215">신고</a>
+                                            </span>
+                                        </span>
+                                        <span class="autoFrame-ly-rside">
+                                            <span class="option-item">
+                                                <a class="close_suggest">자동완성 끄기</a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
