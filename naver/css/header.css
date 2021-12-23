@@ -158,6 +158,14 @@
     vertical-align: top;
 }
 
+#side_bar {
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #e4e8eb;
+}
+
 .keyboard {
     position: absolute;
 
@@ -275,6 +283,15 @@
 .autoFrame-ly-side {
     float: left;
     padding-left: 20px;
+}
+
+.autoFrame-ly-side > .option-item+.option-item::before {
+    content: '';
+    float: left;
+    width: 1px;
+    height: 11px;
+    margin-top: 14px;
+    background-color: #e2e2e2;
 }
 
 .option-item > a {
